@@ -13,6 +13,7 @@ abstract class BaseFragment<VB : ViewBinding>(
 ) {
 
 
+    // ViewBinding instance, use by subclasses to access the binding
     private var _binding: VB? = null
     val binding: VB
         get() = _binding as VB
@@ -23,6 +24,7 @@ abstract class BaseFragment<VB : ViewBinding>(
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        // Inflate the ViewBinding using the provided inflater
         _binding = bindingInflater.invoke(layoutInflater)
 
 

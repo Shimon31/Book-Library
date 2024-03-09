@@ -17,8 +17,10 @@ class MyBooksFragment : BaseFragment<FragmentMyBooksBinding>(FragmentMyBooksBind
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        // Set up the click listeners for the return buttons.
         binding.returnBTN.setOnClickListener {
 
+            // Navigate to the Books Library Fragment when returnBTN is clicked.
             it.findNavController().navigate(R.id.action_myBooksFragment_to_books_Library_Fragment4)
 
         }
