@@ -1,4 +1,4 @@
-package com.kst.booklist
+package com.kst.booklist.viewHolder
 
 import androidx.recyclerview.widget.RecyclerView
 import com.kst.booklist.databinding.BasicDesignBinding

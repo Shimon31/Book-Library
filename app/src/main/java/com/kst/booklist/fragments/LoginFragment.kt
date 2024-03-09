@@ -1,12 +1,10 @@
-package com.kst.booklist
+package com.kst.booklist.fragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
+import com.kst.booklist.R
 import com.kst.booklist.base.BaseFragment
 import com.kst.booklist.databinding.FragmentLoginBinding
 

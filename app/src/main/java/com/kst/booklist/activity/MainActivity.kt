@@ -1,7 +1,8 @@
-package com.kst.booklist
+package com.kst.booklist.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.kst.booklist.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

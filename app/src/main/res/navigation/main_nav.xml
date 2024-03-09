@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_nav"
-    app:startDestination="@id/books_Library_Fragment">
+    app:startDestination="@id/loginFragment">
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.kst.booklist.LoginFragment"
+        android:name="com.kst.booklist.fragments.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
@@ -16,7 +16,21 @@
     </fragment>
     <fragment
         android:id="@+id/books_Library_Fragment"
-        android:name="com.kst.booklist.Books_Library_Fragment"
+        android:name="com.kst.booklist.fragments.Books_Library_Fragment"
         android:label="fragment_books__library_"
-        tools:layout="@layout/fragment_books__library_" />
+        tools:layout="@layout/fragment_books__library_" >
+        <action
+            android:id="@+id/action_books_Library_Fragment_to_myBooksFragment"
+            app:destination="@id/myBooksFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myBooksFragment"
+        android:name="com.kst.booklist.fragments.MyBooksFragment"
+        android:label="fragment_my_books"
+        tools:layout="@layout/fragment_my_books" >
+
+        <action
+            android:id="@+id/action_myBooksFragment_to_books_Library_Fragment4"
+            app:destination="@id/books_Library_Fragment" />
+    </fragment>
 </navigation>
